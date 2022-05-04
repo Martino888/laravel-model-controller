@@ -8,9 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-    @foreach ($movies as $movie)
-        {{$movie->title}}
-    @endforeach
+
+        @foreach ($movies as $movie)
+           <div>{{$movie->title}}</div>
+           <div>{{$movie->original_title}}</div>
+           <div>{{$movie->nationality}}</div>
+           <div>{{$movie->date}}</div>
+           <div>{{$movie->vote}}</div>
+        @endforeach
+
+
 
 </body>
 </html>
